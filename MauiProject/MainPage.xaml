@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiProject.MainPage"
+             xmlns:sf="clr-namespace:Syncfusion.Maui.SignaturePad;assembly=Syncfusion.Maui.SignaturePad">
+    
+    <StackLayout>
+        <Button Text="Clear" WidthRequest="120" HorizontalOptions="End"
+                Clicked="ClearSign" Margin="20"></Button>
+        <sf:SfSignaturePad StrokeColor="White"
+                       BackgroundColor="Red"
+                       MinimumStrokeThickness="1"
+                       MaximumStrokeThickness="6"
+                       x:Name="signaturePad"></sf:SfSignaturePad>
+    </StackLayout>
+</ContentPage>
